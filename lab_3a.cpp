@@ -10,7 +10,7 @@ struct Restaurant {
   double reviews;
 };
 
-Restaurant createRest() {
+Restaurant createRestaurant() {
   Restaurant temp;
   cout << "Enter address: ";
   getline(cin, temp.address);
@@ -31,24 +31,28 @@ void printRestaurant(const Restaurant r) {
   cout << "Type: " << r.type << endl;
   cout << "Price Range: " << r.price_range << endl;
   cout << "Veg Options: ";
-  if(r.veg_options)
+  if (r.veg_options) {
+    cout << "Yes" << endl;
+  } else {
+    cout << "No" << endl;
+  }
   cout << "Reviews: " << r.reviews << endl;
 }
 
 int main() {
-  Restaurant r1 = createRest();
-  Restaurant r2 = createRest();
-  Restaurant r3 = createRest();
-  Restaurant r4 = createRest();
+  Restaurant a = createRest();
+  Restaurant b = createRest();
+  Restaurant c = createRest();
+  Restaurant d = createRest();
 
-  cout << "\nRestaurant 1:\n";
-  printRestaurant(r1);
-  cout << "\nRestaurant 2:\n";
-  printRestaurant(r2);
-  cout << "\nRestaurant 3:\n";
-  printRestaurant(r3);
-  cout << "\nRestaurant 4:\n";
-  printRestaurant(r4);
+  cout << "\nRestaurant A:\n";
+  printRestaurant(a);
+  cout << "\nRestaurant B:\n";
+  printRestaurant(b);
+  cout << "\nRestaurant C:\n";
+  printRestaurant(c);
+  cout << "\nRestaurant D:\n";
+  printRestaurant(d);
 
   return 0;
 }
