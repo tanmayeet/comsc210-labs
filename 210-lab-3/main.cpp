@@ -1,7 +1,7 @@
-#include <iostream> // Includes the input/output stream library
+#include <iostream>
 using namespace std;
 
-int main() { // The main function, where program execution begins
-    std::cout << "Hello World!" << std::endl; // Prints "Hello World!" to the console
-    return 0; // Indicates successful program execution
-}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
+int main() { 
+    cout << "Hello World!" << endl; 
+    return 0; 
+}

@@ -18,8 +18,7 @@ Restaurant createRest() {
   getline(cin, temp.type);
   cout << "Enter the price_range of restaurant (1-4): ";
   cin >> temp.price_range;
-  cout << "Enter whether the restaurant has vegetarian options or not (1 for "
-          "Yes, 0 for No): ";
+  cout << "Enter whether the restaurant has vegetarian options or not (1/0): ";
   cin >> temp.veg_options;
   cout << "Enter the reviews of the restaurant (1.0-5.0): ";
   cin >> temp.reviews;
@@ -31,7 +30,8 @@ void printRestaurant(const Restaurant r) {
   cout << "Address: " << r.address << endl;
   cout << "Type: " << r.type << endl;
   cout << "Price Range: " << r.price_range << endl;
-  cout << "Veg Options: " << (r.veg_options ? "Yes" : "No") << endl;
+  cout << "Veg Options: ";
+  if(r.veg_options)
   cout << "Reviews: " << r.reviews << endl;
 }
 

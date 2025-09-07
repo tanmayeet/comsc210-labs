@@ -9,15 +9,12 @@ struct Color {
   int b_hue;
 };
 
-vector<Color> color;
-
 int randomNum() {
-  std::random_device rd;
-  std::mt19937 gen(rd());
-  std::uniform_int_distribution<int> dist(0, 255);
-  int r = dist(gen);  // random red value
-  int g = dist(gen);  // random green value
-  int b = dist(gen);  // random blue value
+
 }
 
-int main() { return 0; }
+int main() { 
+vector<Color> color;
+
+
+return 0; }
