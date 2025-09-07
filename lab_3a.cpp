@@ -40,10 +40,10 @@ void printRestaurant(const Restaurant r) {
 }
 
 int main() {
-  Restaurant a = createRest();
-  Restaurant b = createRest();
-  Restaurant c = createRest();
-  Restaurant d = createRest();
+  Restaurant a = createRestaurant();
+  Restaurant b = createRestaurant();
+  Restaurant c = createRestaurant();
+  Restaurant d = createRestaurant();
 
   cout << "\nRestaurant A:\n";
   printRestaurant(a);
