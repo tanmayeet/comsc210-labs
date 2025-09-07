@@ -55,5 +55,16 @@
   "C_Cpp_Runner.useLeakSanitizer": false,
   "C_Cpp_Runner.showCompilationTime": false,
   "C_Cpp_Runner.useLinkTimeOptimization": false,
-  "C_Cpp_Runner.msvcSecureNoWarnings": false
+  "C_Cpp_Runner.msvcSecureNoWarnings": false,
+  "C_Cpp.default.includePath": [
+    "${workspaceFolder}/**",
+    "/usr/include",
+    "/usr/local/include",
+    "/Library/Developer/CommandLineTools/usr/include/c++/v1"
+  ],
+  "C_Cpp.default.compilerPath": "/usr/bin/clang++",
+  "files.associations": {
+    "iostream": "cpp",
+    "istream": "cpp"
+  }
 }
