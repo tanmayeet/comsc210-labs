@@ -5,17 +5,28 @@
 #include <iostream>
 using namespace std;
 
-int enterArrayData(double *arr, int) {
+int enterArrayData(double* arr, int size) {
+  double* arr[size] = new double[size];
   cout << "Data entry for the array:" << endl;
 
-  if ()
-    for (int i = 0; i < SIZE; i++) {
-    }
-  cout << "Element #" <<
+  for (int i = 0; i < size; i++) {
+    cout << "Element #" << i << ":";
+    cin << arr[i] << endl;
+  }
 }
 
-int outputArrayData() {}
+int outputArrayData(double* arr, int size) {}
 
-void sumArray() {}
+void sumArray(double* arr, int size) {
+  int sum = 0;
+  for (int i = 0; i < size; i++) {
+    sum = arr[i]
+  }
+}
+int main(
 
-int main() { return 0; }
+    const int size = 5;
+
+) {
+  return 0;
+}
