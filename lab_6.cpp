@@ -5,10 +5,12 @@
 #include <iostream>
 using namespace std;
 
-int enterArrayData(/*whtvr is in here*/) {
+int enterArrayData(double *arr, int) {
   cout << "Data entry for the array:" << endl;
-  for (int i = 0; i < SIZE; i++) {
-  }
+
+  if ()
+    for (int i = 0; i < SIZE; i++) {
+    }
   cout << "Element #" <<
 }
 
