@@ -5,27 +5,30 @@
 using namespace std;
 
 void reverseArray(string* arr, int size) {
-  for (int i = 0; i < size; i++) {  // iterates through array
+  for (int i = 0; i < size / 2; i++) {  // iterates through array
     int* left_ptr = arr;
     int* right_ptr = arr + size - 1;
   }
 }
 
-string displayArray(string* arr, int size) {}
-
-int main() {
-  const int size = 5;
-  string* arr = new string[size];
-
-  cout << "Original array: ";
+string displayArray(string* arr, int size) {
   for (int i = 0; i < size; i++) {
-    cout << arr[i] << " ";
+    cout << *(arr + i) << " ";
   }
 
-  reverseArray(arr, size);
+  int main() {
+    const int size = 5;
+    string* arr = new string[size];
 
-  cout << "Reversed array: ";
-  displayArray(arr, size);
+    cout << "Original array: ";
+    for (int i = 0; i < size; i++) {
+      cout << *(arr + i) << " ";
+    }
 
-  return 0;
-}
+    reverseArray(arr, size);
+
+    cout << "Reversed array: ";
+    displayArray(arr, size);
+
+    return 0;
+  }
