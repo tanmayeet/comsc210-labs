@@ -6,6 +6,8 @@ using namespace std;
 
 void reverseArray(string* arr, int size) {
   for (int i = 0; i < size; i++) {  // iterates through array
+    int* left_ptr = arr;
+    int* right_ptr = arr + size - 1;
   }
 }
 
@@ -20,7 +22,10 @@ int main() {
     cout << arr[i] << " ";
   }
 
-  reverseArray(string * arr, int size)
+  reverseArray(arr, size);
 
-      return 0;
+  cout << "Reversed array: ";
+  displayArray(arr, size);
+
+  return 0;
 }
