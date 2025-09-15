@@ -7,7 +7,7 @@ using namespace std;
 // Function prototypes
 void enterArrayData(double* arr, int size);
 void outputArrayData(double* arr, int size);
-void sumArray(double* arr, int size);
+double sumArray(double* arr, int size);
 
 void enterArrayData(double* arr, int size) {
   cout << "Data entry for the array:" << endl;
@@ -26,12 +26,13 @@ void outputArrayData(double* arr, int size) {
   cout << endl;
 }
 
-void sumArray(double* arr, int size) {
-  int sum = 0;
+double sumArray(double* arr, int size) {
+  double sum = 0.0;
   for (int i = 0; i < size; i++) {
     sum += *(arr + i);
   }
   cout << "Sum of values: " << sum << endl;
+  return sum;
 }
 
 int main() {
