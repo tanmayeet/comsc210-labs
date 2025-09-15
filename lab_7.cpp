@@ -1,14 +1,11 @@
-// COMSC 210 | Lab 6 | Tanmayee Chalamalasetti
+// COMSC 210 | Lab 7 | Tanmayee Chalamalasetti
 // IDE used: VS Code
 
 #include <iostream>
 using namespace std;
 
 void reverseArray(string* arr, int size) {
-  cout << "Original array:" << endl;
-
   for (int i = 0; i < size; i++) {  // iterates through array
-    arr[i]
   }
 }
 
@@ -18,5 +15,12 @@ int main() {
   const int size = 5;
   string* arr = new string[size];
 
-  return 0;
+  cout << "Original array: ";
+  for (int i = 0; i < size; i++) {
+    cout << arr[i] << " ";
+  }
+
+  reverseArray(string * arr, int size)
+
+      return 0;
 }
