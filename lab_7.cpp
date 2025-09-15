@@ -8,29 +8,17 @@ using namespace std;
 void reverseArray(string* arr, int size);
 void displayArray(string* arr, int size);
 
-// reverseArray takes in a pointer to a string array and an int size and uses a
-// for loop set to iterate through half of the array and each time it does, it
-// switches valus with element whose position is the same distanc from the
-// midpoint as the temp variable (i.e. 1 & 5 are both 2 away from its midpoint
-// of 3, 2 & 4 as well)
-// arguments: string* arr, int size
-// returns nothing
+// reverseArray uses a for loop set to iterate through the array reverse its
+// elements arguments: string* arr, int size returns nothing
 void reverseArray(string* arr, int size) {
   string temp;
   for (int i = 0; i < size / 2;
-       i++) {  // iterates through half the array (doesn't need to do more as it
-               // only reverses the element (size / 2) times)
+       i++) {           // iterates through half the array to avoid redundancy
     temp = *(arr + i);  // initializes a temporary position at the start (moves
                         // the start over by one each time the loop iterates)
-    *(arr + i) = *(arr + size - 1 -
-                   i);  // sets the start (wherever that is) to the end variable
-                        // (size - 1 (to avoid out of bound issues as we always
-                        // start at 0) - i (depending on where we start aka what
-                        // iteration of the for loop this is))
-    *(arr + size - 1 - i) =
-        temp;  // vice versa but now with the end element (but end goes down by
-               // 1 each time we iterat through the loop as we are trying to
-               // reverse the )
+    *(arr + i) = *(arr + size - 1 - i);  // sets the start (wherever that is) to
+                                         // the end variable (size - 1 - i)
+    *(arr + size - 1 - i) = temp;  // vice versa but now with the end element
   }
 }
 
