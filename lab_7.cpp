@@ -4,6 +4,9 @@
 #include <iostream>
 using namespace std;
 
+void reverseArray(string* arr, int size);
+void displayArray(string* arr, int size);
+
 void reverseArray(string* arr, int size) {
   string temp;
   for (int i = 0; i < size / 2;
@@ -23,25 +26,31 @@ void reverseArray(string* arr, int size) {
   }
 }
 
-string displayArray(string* arr, int size) {
+void displayArray(string* arr, int size) {
   for (int i = 0; i < size; i++) {
     cout << *(arr + i) << " ";
   }
+  cout << endl;
 }
 
 int main() {
   const int size = 5;
   string* arr = new string[size];
 
+  *(arr + 0) = "Janet";
+  *(arr + 1) = "Jeffe";
+  *(arr + 2) = "Jin";
+  *(arr + 3) = "Joe";
+  *(arr + 4) = "Junio";
+
   cout << "Original array: ";
-  for (int i = 0; i < size; i++) {
-    cout << *(arr + i) << " ";
-  }
+  displayArray(arr, size);
 
   reverseArray(arr, size);
 
   cout << "Reversed array: ";
   displayArray(arr, size);
 
+  delete[] arr;
   return 0;
 }
