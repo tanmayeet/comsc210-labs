@@ -22,8 +22,7 @@ void enterArrayData(double* arr, int size) {
     while (!(cin >> *(arr + i))) {  // input validation
       cin.clear();                  // resets the stream
       cin.ignore(1000, '\n');       // discards any bad inputs
-      cout << "Invalid input. Please enter a number for Element #" << i << ": "
-           << endl;
+      cout << "Invalid input. Please enter a number for Element #" << i << ": ";
     }
   }
   cout << "Data entry complete." << endl;
